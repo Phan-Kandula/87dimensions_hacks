@@ -9,8 +9,7 @@ import javafx.scene.image.Image;
 public class Tile {
     boolean walkable;
     Image image;
-
-    //Person player;
+    Person player;
 
     /**
      *

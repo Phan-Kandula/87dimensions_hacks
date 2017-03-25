@@ -8,6 +8,7 @@ import shared.Tile;
  */
 public interface InterfaceModel {
     public Tile[][] getTileData();		//returns the 2D array of tile objects representing the map
-    public Person[] getPerson();
+    public Person[] getTeam1();
+    public Person[] getTeam2();
 
 }
