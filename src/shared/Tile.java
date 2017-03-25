@@ -9,7 +9,8 @@ import javafx.scene.image.Image;
 public class Tile {
     boolean walkable;
     Image image;
-    Person player;
+
+    //Person player;
 
     /**
      *
@@ -19,20 +20,9 @@ public class Tile {
     public Tile(Boolean walkable, Image img) {
         this.walkable = walkable;
         this.image = img;
-        player = null;
+        //player = null;
     }
 
-    /**
-     *
-     * @param walkable is the tile walkable
-     * @param player is the character on the tile
-     * @param img tile's picture
-     */
-    public Tile(boolean walkable, Player player, Image img) {
-        this.walkable = walkable;
-        this.player = player;
-        this.image = img;
-    }
 
     public Person getPlayer() {
         return player;
@@ -47,7 +37,7 @@ public class Tile {
      * get the tile's background image
      * @return
      */
-    public BufferedImage getImage(){
+    public Image getImage(){
         return image;
     }
 
@@ -55,8 +45,7 @@ public class Tile {
      * set the tile's background image to the BufferedImage passed in
      * @param newImage
      */
-    @Override
-    public void setImage(BufferedImage newImage) {
+    public void setImage(Image newImage) {
         image = newImage;
     }
 
